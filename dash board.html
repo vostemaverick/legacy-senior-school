@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <h1>Legacy Senior School Portal</h1>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="dashboard">
+
+        <div class="card">
+            <h2>Student Profile</h2>
+
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Admission No:</strong> LSS1023</p>
+            <p><strong>Class:</strong> Grade 11</p>
+        </div>
+
+        <div class="card">
+            <h2>Assignments</h2>
+
+            <ul>
+                <li>Mathematics CAT - Friday</li>
+                <li>Chemistry Report - Monday</li>
+                <li>History Essay - Wednesday</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Exam Results</h2>
+
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Score</th>
+                </tr>
+
+                <tr>
+                    <td>Math</td>
+                    <td>85%</td>
+                </tr>
+
+                <tr>
+                    <td>English</td>
+                    <td>78%</td>
+                </tr>
+
+                <tr>
+                    <td>Biology</td>
+                    <td>91%</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <script src="portal.js"></script>
+</body>
+</html>
