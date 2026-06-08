@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Results</title>
+
+<link rel="stylesheet" href="portal.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+<h1>Student Results</h1>
+
+<a href="dashboard.html">
+<button>Back</button>
+</a>
+
+</header>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h2>Exam Results</h2>
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>85%</td>
+</tr>
+
+<tr>
+<td>English</td>
+<td>78%</td>
+</tr>
+
+<tr>
+<td>Biology</td>
+<td>91%</td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="generatePDF()">
+Download Report Card
+</button>
+
+</div>
+
+</div>
+
+<!-- jsPDF Library -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+
+function generatePDF(){
+
+    const { jsPDF } = window.jspdf;
+
+    const doc = new jsPDF();
+
+    doc.setFontSize(20);
+
+    doc.text("Legacy Senior School", 20, 20);
+
+    doc.setFontSize(16);
+
+    doc.text("Student Report Card", 20, 35);
+
+    doc.setFontSize(12);
+
+    doc.text("Student Name: John Doe", 20, 55);
+
+    doc.text("Mathematics: 85%", 20, 75);
+
+    doc.text("English: 78%", 20, 90);
+
+    doc.text("Biology: 91%", 20, 105);
+
+    doc.text("Grade: A-", 20, 125);
+
+    doc.save("report-card.pdf");
+}
+
+</script>
+
+</body>
+</html>
