@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Login</title>
+
+<link rel="stylesheet" href="portal.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+	<h1>Legacy Senior School</h1>
+
+	<h2>Student Portal Login</h2>
+
+	<input
+		type="email"
+		id="email"
+		placeholder="Enter Email"
+	>
+
+	<input
+		type="password"
+		id="password"
+		placeholder="Enter Password"
+	>
+
+	<button onclick="login()">
+		Login
+	</button>
+
+	<p id="message"></p>
+
+	<p>
+		Don't have an account?
+		<a href="register.html">
+			Register
+		</a>
+	</p>
+
+</div>
+
+<!-- Firebase App -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<!-- Firebase Auth -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<!-- Firebase Config -->
+
+<script src="firebase.js"></script>
+
+<!-- Authentication Logic -->
+
+<script src="auth.js"></script>
+
+</body>
+</html>
